@@ -1,0 +1,18 @@
+client 1 brainstorm
+- a watermark
+- opague white words on a background
+- logo in a corner
+
+client 2 brainstorm
+- adding borders to individual or groups of photos
+
+client 3 brainstorm
+- logo with variable opacity and size
+
+client 4 brainstorm
+* photoshop where you can stretch parts of the image
+* a simple drawing program that can add to images
+
+* denotes features to implement
+
+We chose client 4 because we think it will be challenging and fun.
