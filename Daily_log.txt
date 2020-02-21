@@ -1,2 +1,4 @@
 Daily log:
 	2/18: First day of work. Mostly planning and establishing goals and roles.
+	2/20: Implemented algorithm to stretch and blur the image.
+	2/21: Created interactions and user input and removed gui.
