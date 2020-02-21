@@ -3,7 +3,6 @@ import PIL
 import matplotlib.pyplot as plt
 import os.path              
 
-
 def stretch(x_pos,y_pos,power,original_image):
     new_img = PIL.Image.open(original_image)
     original_img = PIL.Image.open(original_image)
