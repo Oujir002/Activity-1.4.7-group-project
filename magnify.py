@@ -2,12 +2,13 @@
 import PIL
 import matplotlib.pyplot as plt
 import os.path              
-
+#x and y are the coordinates of the pixel being copied
+#x_pos and y_pos are the coordinates of the magnify
 def stretch(x_pos,y_pos,power,original_image):
     try:
         new_img = PIL.Image.open(original_image)
         original_img = PIL.Image.open(original_image)
-    except SyntaxError, IOError:
+    except SyntaxError, IOError: #If there is an error then stop the program and tell them they messed up
         print("failed to open image, please supply a proper path")
     fig, axes = plt.subplots(1, 2)
     axes[0].imshow(original_img, interpolation='none')
@@ -17,6 +18,7 @@ def stretch(x_pos,y_pos,power,original_image):
     y_distance_from_center = 0 #how far away the drawn pixel is from the center
     x = x_pos
     y = y_pos
+    #top left
     for y in range(y,y+power): #repeats for the power
         for i in range(power-y_iterator): #decrements for every pixel in the y axis
             for x in range(x,x+power): #repeats for the power
@@ -40,6 +42,7 @@ def stretch(x_pos,y_pos,power,original_image):
     y_distance_from_center = 0 #how far away the drawn pixel is from the center
     x = x_pos
     y = y_pos
+    #top right
     for y in range(y,y+power): #repeats for the power
         for i in range(power-y_iterator): #decrements for every pixel in the y axis
             for x in range(x,x+power): #repeats for the power
@@ -63,6 +66,7 @@ def stretch(x_pos,y_pos,power,original_image):
     y_distance_from_center = 0 #how far away the drawn pixel is from the center
     x = x_pos
     y = y_pos
+    #bottom left
     for y in range(y,y+power): #repeats for the power
         for i in range(power-y_iterator): #decrements for every pixel in the y axis
             for x in range(x,x+power): #repeats for the power
@@ -86,6 +90,7 @@ def stretch(x_pos,y_pos,power,original_image):
     y_distance_from_center = 0 #how far away the drawn pixel is from the center
     x = x_pos
     y = y_pos
+    #bottom right
     for y in range(y,y+power): #repeats for the power
         for i in range(power-y_iterator): #decrements for every pixel in the y axis
             for x in range(x,x+power): #repeats for the power
